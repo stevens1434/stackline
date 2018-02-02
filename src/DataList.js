@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-// import { MuiThemeProvider, theme } from 'material-ui/styles';
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 import Card from 'material-ui/Card';
-// import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, Tooltip, Pie, PieChart, Cell, Sector, ResponsiveContainer} from 'recharts';
 import './App.css';
-// const nf = new Intl.NumberFormat('en-US', {
-//   style: 'currency',
-//   currency: 'USD',
-//   minimumFractionDigits: 2,
-//   maximumFractionDigits: 2
-// });
 
 class DataList extends Component {
   constructor(props) {
@@ -19,7 +11,6 @@ class DataList extends Component {
       sortHighToLow: true
     }
     this.sort = this.sort.bind(this);
-    // this.changedDollarAmount = this.changedDollarAmount.bind(this);
   }
 
   sort(column) {
@@ -45,43 +36,8 @@ class DataList extends Component {
     //   console.log('sort it from high to low and change state to true')
     //   return ( <p>{console.log('byee')}</p> )
     // }
-
-    // this.props.updateState(records);
   }
 
-  // changedDollarAmount(changedAmount, percent) {
-  //   if (Math.sign(changedAmount > 0)) {
-  //     console.log('math.sign(): ', Math.sign(changedAmount));
-  //     let formattedAmount = nf.format(changedAmount);
-  //     let percentage = parseFloat(percent*100).toFixed(2)+"%";
-  //     console.log('percentage in f(x): ', percentage);
-  //     let finalPercent = `(${percentage})`;
-  //     console.log('finalPercent in f(x): ', finalPercent);
-  //     return (
-  //       <span className='positiveNumber'>+{formattedAmount} {finalPercent}</span>
-  //     )
-  //   } else if (Math.sign(changedAmount) === 0) {
-  //     console.log('math.sign(): ', Math.sign(changedAmount));
-  //     let formattedAmount = nf.format(changedAmount);
-  //     let percentage = parseFloat(percent*100).toFixed(2)+"%";
-  //     console.log('percentage in f(x): ', percentage);
-  //     let finalPercent = `(${percentage})`;
-  //     console.log('finalPercent in f(x): ', finalPercent);
-  //     return (
-  //       <span className='neutralNumber'>+{formattedAmount} (0.00%)</span>
-  //     )
-  //   } else {
-  //     console.log('math.sign(): ', Math.sign(changedAmount));
-  //     let formattedAmount = nf.format(changedAmount);
-  //     let percentage = parseFloat(percent*100).toFixed(2)+"%";
-  //     console.log('percentage in f(x): ', percentage);
-  //     let finalPercent = `(${percentage})`;
-  //     console.log('finalPercent in f(x): ', finalPercent);
-  //     return (
-  //       <span className='negativeNumber'>{formattedAmount} {finalPercent}</span>
-  //     )
-  //   }
-  // }
 
   render() {
     if (this.props.data && this.props.salesData) {

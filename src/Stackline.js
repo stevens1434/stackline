@@ -4,8 +4,6 @@ import Grid from 'material-ui/Grid';
 import LeftPanel from './LeftPanel';
 import Chart from './Chart';
 import DataList from './DataList';
-// import Card, { CardHeader, CardTitle, CardText} from 'material-ui/Card';
-// import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, Tooltip, Pie, PieChart, Cell, Sector, ResponsiveContainer} from 'recharts';
 import './App.css';
 // const nf = new Intl.NumberFormat('en-US', {
 //   style: 'currency',
@@ -75,11 +73,8 @@ class Stackline extends Component {
 
   render() {
     let data = this.props.data;
-    // console.log('data: ', data);
     let changedAmount = 25000;
     let percent = (1000/changedAmount);
-    // console.log('percent in render: ', percent);
-    // let movieData = dataMovie.map(())
     return (
       <div className="Parent1">
         <MuiThemeProvider theme={theme}>
@@ -118,13 +113,5 @@ class Stackline extends Component {
     );
   }
 }
-
-// <h1>Parent1.js AAaabcd in Open Sans</h1>
-// <h1 className='productTitle'>ASICS</h1>
-// <p className='productSubTitle'>ASICS Mens Gel Venture S Trail Running Shoes</p>
-// <p className='currentDollarAmount'>$54.79</p>
-// <p className='changedDollarAmount'>{this.changedDollarAmount(changedAmount, percent)}</p>
-// <p>prior week</p>
-// <p>Parent1.js AAaabcd in Open Sans</p>
 
 export default Stackline;
